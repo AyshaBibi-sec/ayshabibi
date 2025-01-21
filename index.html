@@ -2,34 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio | Aysha Bibi</title>
+
+    <link rel="icon" type="png|image" href="/IMAGES/ayshalogo.png">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="neon-text">Welcome to My Cyber Portfolio</h1>
-            <p>This is where the magic happens!</p>
-        </header>
 
-        <section id="about">
-            <h2 class="neon-heading">About Me</h2>
-            <p>I'm a cybersecurity enthusiast with a passion for ethical hacking, network security, and more.</p>
-        </section>
+    <canvas id="matrixCanvas"></canvas> <!-- Matrix Animation -->
+    <script src="/JAVASCRIPT/matrix.js"></script>
 
-        <section id="skills">
-            <h2 class="neon-heading">Skills</h2>
-            <p>SIEM, PAM, DLP, Threat Intelligence, and more.</p>
-        </section>
+    <header class="header">
+        <a href="#" class="logo">Aysha Bibi's Portfolio</a>
 
-        <footer>
-            <h2 class="neon-heading">Contact</h2>
-            <p>Email: your.email@example.com</p>
-        </footer>
-    </div>
+        <nav class="navbar">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#skill" style="--i:3;">Skills</a>
+            <a href="#project" style="--i:4;">Projects</a>
+            <a href="#contact" style="--i:5;">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Background animation -->
-    <div class="molecules"></div>
-</body>
+    <section id="home" class="home">
+
+        <div class="home-content" data-scroll data-scroll-speed="-5">
+            <h3 class="mu">Hello, It's me</h3>
+            <h1>Aysha Bibi</h1>
+            <h3>And I'm a <span class="pro-text">
+                <script>
+                   var typed = new Typed(".pro-text", {
+                      strings: [
+                        "Cybersecurity Expert",
+                        "Machine Learning Enthusiast",
+                        "PhD Candidate in Cybersecurity",
+                        "SOC Analyst",
+                        "Penetration Tester",
+                        "Blockchain Advocate"
+                      ],
+                      typeSpeed: 100,
+                      backSpeed: 100,
+                      backDelay: 1000,
+                      loop: true        
+                    });
+                </script>
+            </span></h3>
+            
+            <p>  &emsp; &emsp;This portfolio highlights my passion for cybersecurity, machine learning, and privacy-preserving AI/ML techniques. <br> <br>
+                &emsp; &emsp;I have significant experience working with security operations, threat intelligence, and advanced cybersecurity technologies, and I'm currently pursuing my PhD in Cybersecurity. <br> <br>
+                &emsp; &emsp;My work has involved penetration testing, incident response, and securing AI/ML systems.
+            </p>
+
+            <div class="home-sci">
+                <a href="https://github.com/ayshabibi" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/ayshabibi/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/your-number" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/ayshabibi/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+           <a href="/docs/aysha_cv.pdf" class="btn-box" download="Aysha_Bibi_CV">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="/IMAGES/aysha.png" alt="Aysha Bibi">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body> 
 </html>
